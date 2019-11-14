@@ -32,6 +32,7 @@ int main(int argc, char **argv)
   tf::TransformListener listener;
   tf::StampedTransform transform;
   geometry_msgs::PoseStamped pose;
+  ros::Duration(1.0).sleep();
   listener.waitForTransform( tfNameSource, tfNameTarget, ros::Time(0), ros::Duration(1.0)); 
   try{
     listener.lookupTransform(tfNameSource, tfNameTarget, ros::Time(0), transform);  
