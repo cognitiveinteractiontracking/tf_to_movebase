@@ -5,7 +5,7 @@
 # 2. Publish points in rviz
 # 3. call this script and store the output
 
-FILE="/tmp/point_file.txt"
+FILE=$1 # e.g. /tmp/point_file.txt
 RATE=100
 S="odom"
 T_PREFIX="target"
